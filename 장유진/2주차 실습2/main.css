@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    background-color: aqua;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    padding: 30px;
+}
+
+.tag {
+    font-size: 1.5em;
+    color:blueviolet;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 3.0em;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.description {
+    color:rgb(57, 57, 53);
+    font-size: 1.5em;
+}
+
+.item {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    /* border: 3px solid rgb(255, 255, 255); */
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    overflow: hidden;
+
+}
+
+.content-wrapper {
+    padding: 30px;
+}
+
