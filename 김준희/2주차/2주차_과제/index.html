@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+  <!-- 외부 스타일링 시트를 적용할 수 있는 코드를 작성해주세요 (실습 참고) -->
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <div class="container"> <!-- class명을 지정해주세요 (main.css 참고) -->
+
+    <div class="pokemons"></div>
+    ㄴ
+    <div class="logo"> <!-- 포켓몬 로고를 넣을 수 있는 코드를 넣어주세요! (main.css 참고) -->
+      <img src="./images/main_logo.png" alt="로고">
+    </div>
+
+  </div>
+
+  <script>
+    // 코드 반복 대신 js로 함수 만들어 해결함!
+    // 1~32를 돌며 div 요소를 생성하고 그에 맞는 배경 이미지를 스타일로 부여함.
+    function repeatPokemon() {
+      var pokemonsContainer = document.querySelector('.pokemons');  // 부모 요소인 .pokemons 찾기
+
+      for (var i = 1; i <= 32; i++) {
+        var pokemon = document.createElement('div');  // .pokemon 요소 생성
+        pokemon.classList.add('pokemon');
+        var image = document.createElement('div');  // .image 요소 생성
+        image.classList.add('image');
+        image.style.backgroundImage = `url('./images/pokemon${i}.png')`; // 배경 이미지 추가
+        pokemon.appendChild(image);  // .pokemon 요소에 .image를 자식으로 추가  
+        pokemonsContainer.appendChild(pokemon);  // .pokemons 요소에 .pokemon을 자식으로 추가
+      }
+    }
+
+    repeatPokemon(); // 함수 호출
+
+  </script>
+</body>
+
+</html>
