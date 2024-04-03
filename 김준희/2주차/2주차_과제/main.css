@@ -1,7 +1,6 @@
 body {
 	height: 100vh;
 	background-image: url('./images/background.jpeg');
-	background-color: #ff9c00;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -12,35 +11,34 @@ body {
 }
 
 .container {
-	padding: 50px 0; 	/* 내부 여백의 상하 50px, 좌우 0으로 설정하는 코드 작성해주세요 */
+	padding: 50px 0; 
 }
 
 .container .pokemons {
 	flex-wrap: wrap;
-	display: flex;   /* 요소들의 메인 축을 가로로 설정하는 코드를 입력해주세요 */
+	display: flex;  
 	justify-content: center;
-	max-width: 700px;  /* 요소의 최대 가로 크기를 700px로 설정해주세요 */
-	padding: 40px 20px;   /* 내부 여백에 상하 40px, 좌우 20px 적용해주세요 */
+	max-width: 700px; 
+	padding: 40px 20px;   
 }
 
 .container .pokemons .pokemon {
 	box-sizing: border-box;
-	width: 80px; /* 너비 80px, 높이 84px, 테두리를 3px 실선 하얀색으로 지정해주는 코드를 각각 작성해주세요 */
+	width: 80px;
 	height: 84px;
-	border: 3px solid white;
+	border: 3px solid #fff;
 	border-radius: 10px;
-	background-color: rgb(83, 83, 83);
-	transition: transform 0.15s; /* transition 속성을 적용해주세요 */
-	transform: skewX(-20deg); /* transform 속성을 적용해주세요 */
+	background-color: #656565;
+	transition: transform 0.15s; 
+	transform: skewX(-20deg); 
 	overflow: hidden;
 	margin: 5px;
 }
 
-/* 마우스의 포인터를 각 요소에 올렸을때 발생하는 효과를 적용하는 코드들 작성하기 (가상 선택자 활용) */
 .container .pokemons .pokemon:hover {
 	transform: scale(1.3) skewX(-20deg); /* -> transform 속성을 여러 개 사용할 때는 동시에 써줘야 한다. */
 	z-index: 1;  /* -> hover 됐을 때, 다른 요소들보다 앞에 오도록 */
-	background-color: orange;
+	background-color: #ff9c00;
 }
 
 .container .pokemons .pokemon .image {
@@ -52,23 +50,20 @@ body {
 	transform: skewX(20deg); /* -> 이미지는 왜곡 없이 유지하기 위해 다시 반대 반향으로 변형 */
 }
 
-/* :nth-child() 가상클래스가 무엇인지 알아보고, 이를 적용하여 각 요소에 포켓몬 이미지 넣기 
-(32개의 반복된 코드가 필요하며, 이미지는 background-image 속성 이용하기) */
-
 /* --> nth-child를 쓸 경우, 이 코드의 N자리에 1~32 숫자를 써서 코드 32개 작성하면 된다.*/
 .pokemons .pokemon:nth-child(N) .image {
     background-image: url('./images/pokemonN.png');
 }
-
 /* 하지만 위의 방법을 쓰면 코드 반복이 많아지므로, 이 방식 대신 script에 함수를 만들어 해결함! */ 
 
 .container .logo {
-	width: 300px;   /* 이미지 요소가 너무 크네요! 요소의 최대 가로 크기를 임의로 설정해주세요 */
-	margin: 0 auto;   /* margin을 이용해서 요소를 가운데 정렬 해주세요  */
+	width: 300px;   
+	margin: 0 auto;   
 }
 
 .container .logo img {
-	width: 100%;   /* width를 이용해서 로고를 부모 요소의 최대 너비에 맞춰서 출력할 수 있는 코드 작성해주세요 */
+	width: 100%;  
 }
+
 
 
