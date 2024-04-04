@@ -42,7 +42,7 @@ body {
 }
 
 .container .pokemons .pokemon:hover{
-   transform: skew(-15deg) scale(1.1);
+    transform: skew(-15deg) scale(1.4);
     transition: all 0.2s linear; 	
 	background-color: #ff9c00;
 	z-index: 2;
@@ -193,14 +193,14 @@ body {
 
 
 .container .logo {
-   max-width: 100px;
+   max-width: 400px;
    margin: 0 auto;
    text-align: center;
    
 }
 
 .logo{
-    width: 300px; 
+    width: 700px; 
 }
 
 .container .logo img {
