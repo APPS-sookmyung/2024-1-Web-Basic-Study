@@ -1,5 +1,7 @@
-let powerList = []; // 전역 변수 powerList
+// 포켓몬 능력치 정보를 저장할 배열을 전역으로 생성
+let powerList = [];
 
+// power() 함수 - 능력치 랜덤값(0~201) 32개 생성
 function power() {
   for (let i = 0; i < 32; i++) {
     powerList.push(Math.floor(Math.random() * 201));
@@ -7,7 +9,7 @@ function power() {
   console.log(powerList);
 }
 
-// 1~32를 돌며 div 요소를 생성하고 그에 맞는 인덱스, 속성, 배경을 부여
+// repeatPokemon() 함수 - pokemons에 32개의 div 요소를 생성하고 그에 맞는 인덱스, 속성, 배경을 부여
 function repeatPokemon() {
   let pokemonsContainer = document.querySelector(".pokemons"); // 부모 요소인 .pokemons 찾기
 
@@ -21,7 +23,6 @@ function repeatPokemon() {
       );
     }); // click 이벤트 발생시, pokemon 요소의 power 속성값을 받아온다.
     pokemon.classList.add("pokemon");
-
     // .image라는 클래스 이름의 div요소 생성
     const image = document.createElement("div");
     image.classList.add("image");
@@ -31,6 +32,7 @@ function repeatPokemon() {
   }
 }
 
+// versus() 함수 - 포켓몬 대결 기능 구현
 function versus() {
   const first = prompt("대결할 첫 번째 포켓몬을 선택해주세요. (숫자입력)");
   const second = prompt("대결할 두 번째 포켓몬을 선택해주세요. (숫자입력)");
@@ -44,5 +46,5 @@ function versus() {
   }
 }
 
-power(); // 32개의 요소에 부여할 능력치 난수 생성 - powerList 배열에 저장
-repeatPokemon(); // 함수 호출
+power();
+repeatPokemon(); //
