@@ -21,30 +21,27 @@ body{
 
 }
 
-.container .itme img{
+.container .item img{
     width: 100%;
 }
 
 .container .item .content-wrapper {
     box-sizing: border-box;
     padding: 20px;
-    width: 100px;
+    width: 100%;
 }
 
 .container .item .content-wrapper .title {
-    foot-size: 30px;
+    font-size: 30px;
     margin-top: 2px;
     font-weight: 600;
 }
 
-.container .item .content-wrapper .description {
-    color
-}
-.tag{
+.container .item .content-wrapper .tag{
     color: purple;
-
 }
 
-.description{
+.container .item .content-wrapper .description{
     color: gray;
+    margin-top: 20px;
 }
