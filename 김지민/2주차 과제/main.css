@@ -42,7 +42,7 @@ body {
 .container .pokemons .pokemon:hover {
     background-color: orange;
 	transform: skewX(-14deg) scale(1.4);
-	
+	z-index: 1;
 }
 
 
@@ -52,10 +52,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 90px;
-	transform: skewX(14deg);
-	translate: skewX(-16px);
-
-	
+	transform: skewX(14deg) translateX(-16px);
 }
 
 .pokemon:nth-child(1) .image { background-image:url('./images/pokemon1.png');}
