@@ -1,7 +1,6 @@
 body {
    height: 100vh;
    background-image:url('images/background.jpeg') ;
-   background-color: #ff9c00;
    background-size: cover;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -30,7 +29,6 @@ body {
    height: 84px;
    border: 3px solid white;
    transition: transform 0.3s linear;
-   transform: rotate(45deg) scale(1);
    transform: scale(1.2);
    border-radius: 10px;
    background-repeat: 110%;
@@ -39,7 +37,6 @@ body {
    background-color: rgb(69, 66, 66);
    position: relative;
    overflow: hidden;
-   padding: 5px;
    transform: skew(-15deg);
    background-size: 100px;
 }
@@ -52,15 +49,15 @@ body {
 }
 
 .container .pokemons .pokemon .image {
-   width: 100%;
+   width: 140%;
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 100px;
+   background-size: 90px;
    position:relative;
    box-sizing: border-box;
    margin: auto;
-   transform: skew(15deg);
+   transform: skewX(14deg) translateX(-16px)
 }
 
 
@@ -196,13 +193,18 @@ body {
 
 
 .container .logo {
-   max-width: 300px;
+   max-width: 100px;
    margin: 0 auto;
+   text-align: center;
    
 }
 
+.logo{
+    width: 300px; 
+}
+
 .container .logo img {
-   width :100%;
-   margin-left: 50px;
-   margin-right: 50px;
+    width :100%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
