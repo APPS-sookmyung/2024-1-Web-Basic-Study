@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const pokemons = document.querySelectorAll(".container .pokemons .pokemon");
   const compareButton = document.getElementById("calculate");
-
   const pokemonStats = {};
 
   function generateRandomStats() {
