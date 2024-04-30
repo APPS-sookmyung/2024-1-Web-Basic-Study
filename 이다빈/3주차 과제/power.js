@@ -1,3 +1,4 @@
+//선택자를 이용해 요소를 정렬로 바꾸려 했으나 되지 않는다.
 const pokemonlist = document.querySelectorAll(".container .pokemons .pokemon");
 const pokemonstats = {};
 
