@@ -14,7 +14,7 @@ pokemonlist.forEach((pokemon, index) => {
   const stat = pokemonstats[index];
   const number = index;
   pokemon.addEventListener("click", function () {
-    alert(`monster${number}의 능력치는 ${stat}입니다.`);
+    alert(`monster${number+1}의 능력치는 ${stat}입니다.`);
   });
 });
 
@@ -23,13 +23,7 @@ function compare() {
   const monster1 = parseInt(prompt("monster1을 선택해주세요. (숫자 입력)"));
   const monster2 = parseInt(prompt("monster2을 선택해주세요. (숫자 입력)"));
   if (
-    isNaN(monster1) ||
-    isNaN(monster2) ||
-    monster1 < 0 ||
-    monster1 >= 32 ||
-    monster2 < 0 ||
-    monster2 >= 32 ||
-    monster1 == monster2
+    isNaN(monster1 && monster2) || (monster1 && monster2) < 0 ||  (monster1 && monster2) >= 32 || monster1 == monster2
   ) {
     alert(`값이 올바르지 않습니다.`);
     return;
