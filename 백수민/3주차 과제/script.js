@@ -1,9 +1,4 @@
 const pokemons = document.getElementsByClassName("image");
-const button = document.createElement("button"); // 버튼 생성
-button.innerHTML = '능력치 계산'
-button.style = "top:0;left:0;position:fixed;" // 버튼 위치 top-left에 고정
-button.onclick = comparePokemons;
-document.body.appendChild(button);
 
 for (var i=0; i < pokemons.length; i++) {
     var level = Math.floor(Math.random() * 500) + 1; // 능력치 랜덤 생성
@@ -17,7 +12,7 @@ for (var i = 0; i < pokemons.length; i++) {
     pokemon.addEventListener('click', function(event) {
         var id = event.target.getAttribute('id');
         var value = event.target.getAttribute('value');
-        alert('monster'+ id + '의 능력치는 ' + value + '입니다');
+        alert(`monster${id}의 능력치는 ${value} 입니다`);
     })
 }
 
@@ -39,8 +34,9 @@ function comparePokemons() {
         const level2 = pokemon2.getAttribute('value');
 
         var winner = monster1;
+        
         if (level1 < level2) { winner = monster2 } // 능력치 비교
-        alert(winner + "이 이깁니다.")
+        alert(`${winner}이 이깁니다.`)
     
     } else { alert("올바른 값이 아닙니다.") }
 }
