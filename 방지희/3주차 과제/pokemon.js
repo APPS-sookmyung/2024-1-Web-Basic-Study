@@ -19,7 +19,7 @@ calculateButton.addEventListener("click", function () {
     const monster1 = parseInt(prompt("monster1을 선택해주세요. (숫자 입력)"));
     const monster2 = parseInt(prompt("monster2를 선택해주세요. (숫자 입력)"));
 
-    if (isNaN(monster1) || isNaN(monster2)) {
+    if (isNaN(monster1 && monster2) || (monster1 && monster2) < 0 || (monster1 && monster2) > 31 || (monster1 == monster2)) {
         alert("값이 올바르지 않습니다.");
         return;
     }
