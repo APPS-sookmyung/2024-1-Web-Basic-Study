@@ -5,7 +5,7 @@ const monsterStrengths = Array.from({ length: totalMonsters }, () => Math.floor(
 
 Array.from(monsters).forEach((monster, index) => {
     monster.addEventListener('click', () => {
-        const strength = Strengths[index];
+        const strength = monsterStrengths[index];
         console.log(`몬스터 ${index + 1}의 힘은 ${strength}입니다.`);
 alert(`몬스터 ${index + 1}의 힘은 ${strength}입니다.`);
     });
@@ -18,8 +18,8 @@ function compare(monster1, monster2) {
         return;
     }
 
-    const monster1Strength = Strengths[monster1 - 1];
-    const monster2Strength = Strengths[monster2 - 1];
+    const monster1Strength = monsterStrengths[monster1 - 1];
+    const monster2Strength = monsterStrengths[monster2 - 1];
 
     if (monster1Strength > monster2Strength) {
         console.log(`${monster1}이 이겼습니다.`);
@@ -33,8 +33,6 @@ function compare(monster1, monster2) {
     }
 }
 
-const button = document.createElement("button");
-button.textContent = '능력치 비교';
 button.onclick = function() {
     const monster1 = +prompt("monster1을 선택해주세요. (숫자 입력)");
     const monster2 = +prompt("monster2을 선택해주세요. (숫자 입력)");
