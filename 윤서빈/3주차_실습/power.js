@@ -21,12 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const monster2 = parseInt(prompt("monster2을 선택해주세요.(숫자입력)"));
 
     if (
-      isNaN(monster1) ||
-      isNaN(monster2) ||
-      monster1 < 0 ||
-      monster1 >= pokemons.length ||
-      monster2 < 0 ||
-      monster2 >= pokemons.length
+      [monster1, monster2].some(
+        (num) => isNaN(num) || num < 0 || num >= pokemons.length
+      )
     ) {
       alert(`값이 올바르지 않습니다.`);
       return;
