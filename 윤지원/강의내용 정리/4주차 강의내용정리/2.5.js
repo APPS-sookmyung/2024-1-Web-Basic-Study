@@ -4,6 +4,6 @@ const player = {
   fat: true,
 };
 console.log(player.name);
-console.log(player["name"]); //다른 방법
+console.log(player["name"]);
 player.points = player.points + 15;
 console.log(player.points);
