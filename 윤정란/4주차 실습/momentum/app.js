@@ -5,5 +5,5 @@ const player = {
   },
 };
 
-player.sayHello("nico");
 player.sayHello("lynn");
+player.sayHello("nico");
