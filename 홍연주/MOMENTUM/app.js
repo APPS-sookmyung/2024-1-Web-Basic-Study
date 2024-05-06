@@ -1,9 +1,8 @@
-const player = {
-    name: "yeonju", 
-    points: 10,
-    fat: false,
-};
+function sayHello() {
+    console.log("hello my name is ");
+}
 
-console.log(player);
-player.points = player.points + 15;
-console.log(player.points);
+console.log("hello");
+sayHello("yeonju");
+sayHello("dal");
+sayHello("lynn");
