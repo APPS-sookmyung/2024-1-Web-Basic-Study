@@ -16,12 +16,7 @@ pokemons.forEach((pokemon, index) => {
 });
 
 function compareMonsters(monster1Index, monster2Index) {
-  if (
-    monster1Index < 1 ||
-    monster1Index > totalMonsters ||
-    monster2Index < 1 ||
-    monster2Index > totalMonsters
-  ) {
+  if ((monster1 && monster2) < 0 || (monster1 && monster2) > 31) {
     alert("잘못된 입력입니다. 1부터 32 사이의 숫자를 입력하세요.");
     return;
   }
