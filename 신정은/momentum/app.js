@@ -1,9 +1,24 @@
-const player = {
-    name: "jungeun",
-    points: 10,
-    fat: true,
-};
-console.log(player);
-player.lastName="potato";
-player.points= player.points + 15;
-console.log(player);
+// function plus (firstNumber, secondNumber) {
+//     console.log(firstNumber + secondNumber);
+// }
+// function divide(a, b) {
+//     console.log(a/b);
+// }
+// plus(60, 8);
+// divide(98, 20);
+
+// const player = {
+//     name: "jungeun",
+//     sayHello: function(){
+//         console.log("hello "+otherPersonName + " nice to meet you");
+
+//     },
+// };
+
+// player.sayHello("lynn");
+
+function plus(a, b) {
+    console.log(a+b);
+}
+
+plus(5,5)
