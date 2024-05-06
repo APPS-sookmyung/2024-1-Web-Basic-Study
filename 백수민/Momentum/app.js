@@ -1,19 +1,19 @@
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sat = "sat";
-const sun = "sun";
+const player = {
+    name: "nico",
+    points: 10,
+    fat: true,   
+};
 
-const daysOfWeek = [mon, tue, wed, thu, fri, sat]; // array
+console.log(player);
+console.log(player.name); 
 
-// Get Item from Array
-console.log(daysOfWeek[5]); // sat
+console.log(player.name);
+console.log(player["name"]);
 
-// Add one more day to the array
-daysOfWeek.push("sun");
-console.log(daysOfWeek);
+console.log(player.fat); // true
+player.fat = false;
+console.log(player.fat); // false
 
-const toBuy = ["potato", "tomato", "pizza"];
-toBuy.push("kimbap");
+player.lastName = "potato";
+player.points = player.points + 15;
+console.log(player.points);
