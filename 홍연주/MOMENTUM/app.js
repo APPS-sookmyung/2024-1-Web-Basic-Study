@@ -1,3 +1,3 @@
-const amITall = null;
-let something;
-console.log(something, amITall);
+const buylist = ["potato", "tomato", "pizza"];
+buylist.push("soysauce");
+console.log(buylist[2]);
