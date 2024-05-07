@@ -1,9 +1,9 @@
-// const amIFat = true;
-// console.log(amIfat);
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
-// const amIFat = null;
-// console.log(amIfat);
+// Get Item from Array
+console.log(daysOfWeek);
 
-const amIFat = null;
-let something;
-console.log(amIfat, amIFat);
+// Add one more day to the array
+daysOfWeek.push("sun");
+
+console.log(daysOfWeek);
