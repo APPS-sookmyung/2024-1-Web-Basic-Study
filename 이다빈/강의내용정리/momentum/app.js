@@ -1,15 +1,20 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
-// 계속해서 variable을 만들 수 없음
-const nosense = [1, 2, "hello", false, null, true, undefined, "nico"];
-// 숫자 문자 boolean 등 다 가능
-console.log(nosense);
+const playerName = "nico";
+const playerPoints = 121212;
+const plyaerHansome = false;
+const playerFat = "little bit";
 
-console.log(daysOfWeek);
-// Get Item from Array
-console.log(daysOfWeek[4]); //0부터 시작하므로 다섯번째 항목을 받기 위해선 4
+// const player = ["nico", 121212, false, "little bit"];
 
-//Add one more day to the array
-daysOfWeek.push("sun");
+//데이터를 최선으로 정리하는 방식 -> object
+const player = {
+  name: "nico", // = 대신 : 사용
+  points: 10,
+  fat: true,
+};
+console.log(player);
+console.log(player.name);
+console.log(player["name"]); //위 코드와 같음
 
-const toBuy = ["potato", "tomato", "pizza"];
-toBuy.push("kimbab");
+player.fat = false; //수정
+player.lastName = "potato"; //추가
+player.points = player.points + 15;
