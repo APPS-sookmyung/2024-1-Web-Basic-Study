@@ -1,15 +1,20 @@
-<<<<<<< HEAD
-const amIFat = null;
-let something;
-console.log(something);
-=======
-const a = 5;
-const b = 2;
+const mon = "mon";
+const tue = "tue";
+const wed = "wed";
+const thu = "thu";
+const fri = "fri";
+const sat = "sat";
+const sun = "sun";
 
-const myName = "bini";
+const daysOfWeek = [mon, tue, wed, thu, fri, sat];
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello " + myName);
->>>>>>> refs/remotes/origin/main
+const nonsense = [1, 2, "hello", false, null, true, undefined, "bini"];
+
+//get item from array
+console.log(daysOfWeek[4]);
+console.log(daysOfWeek);
+
+//add one more day to the array
+daysOfWeek.push("sun");
+
+console.log(daysOfWeek);
