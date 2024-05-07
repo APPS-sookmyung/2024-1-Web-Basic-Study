@@ -1,11 +1,8 @@
-const player = {
-  name: "bini",
-  points: 10,
-  fat: true,
-};
-console.log(player);
-console.log(player.name);
-console.log(player["name"]);
+function sayHello() {
+  console.log("Hello!");
+}
 
-player.fat = false;
-console.log(player);
+sayHello();
+sayHello();
+sayHello();
+sayHello();
