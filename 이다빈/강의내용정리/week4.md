@@ -24,43 +24,14 @@
 데이터 타입 숫자와 문자 integer float
 
 # 2.2
-alert("hi");
-
-console.log(54545454); //숫자나 문자를 넣을 수 있음. console에 출력
-
-console.log(5 + 2); //위에서 아래로
-console.log(5 * 2);
-console.log(5 / 2);
-
--------------------------------------------
-
-const a = 5;
-const b = 2;
-const myName = "nico"
-//변수 camelCase _ 사용 대신 대문자로 구분
-
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello " + myName);
+변수(variable)의 필요성 수정 횟수를 줄임 -> 편리함
+const(상수) 바뀌지 않은 값, 값을 업데이트 할 수 없음.
+변수 camelCase는 _ 사용 대신 대문자로 구분
 
 # 2.3
-const a = 5;
-const b = 2;
-let myName = "nico";
-
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello " + myName);
-
-myName = "nicolas"; //let은 variable을 업데이트할 수 있음
-
-console.log("your new name is " + myName);
-
-//기본적으로 const를 사용
-//초기는 var로 선언했으나 업데이트함을 알려주지 않는 문제
-//이에 const와 let을 만듬
+기본적으로 const를 사용
+초기는 var로 선언했으나 업데이트함을 알려주지 않는 문제
+const와 let을 만듬
 
 # 2.4
 boolean
@@ -74,3 +45,13 @@ const amIFat = null; 아무것도 없는 것으로 채워짐. 자연적으로 �
 
 let something;
 console.log(something); //undefined가 출력, 메모리는 존재하나 값이 들어가있지 않음. 
+
+# 2.5
+데이터 저장 방법
+배열(array)
+
+# 2.6
+object는 property를 가진 데이터를 저장하게 함. 데이터를 정리할 수 있음.
+
+# 2.7
+function은 어떤 코드의실행을 여러 번 할 수 있게 함. argument는 function가 실행하는 동안 function에게 정보를 보냄
