@@ -1,6 +1,35 @@
 4주차_#1.0 - #2.8
 ======
-# 2.7
+# 2.2 - 2.3 변수
+변수들 
+const 변경 불가
+let 업데이트 가능
+var 쓰지마 (옛날 버전, 무엇을 원하는지를 정확히 알기 힘듦)
+const, let 사용이 더 좋음 
+
+# 2.4 boolean
+Booleans - true or false
+
+# 2.5 배열 
+Array
+const daysOfWeek = ["mon", "tue", "wed"]
+0부터 시작
+daysOfWeek[0] = mon
+daysOfWeek[1] = tue
+daysOfWeek[2] = wed
+
+# 2.6 object
+const playerName = "유진";
+const playerAge = 23;
+이렇게 하나하나 작성하기보다는 
+
+const player = {
+    name: "유진",
+    age: 23
+};
+object를 만든 후에 안에 속성을 작성 
+
+# 2.7 함수
 function sayHello() {
     console.log("hello my name is")
 }
