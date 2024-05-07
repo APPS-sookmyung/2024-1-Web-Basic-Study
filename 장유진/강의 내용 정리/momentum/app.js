@@ -1,12 +1,17 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+const player = {
+    name: "nico",
+    points: 10,
+    fat: true,
+};
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
 
-console.log(daysOfWeek[5]);
+player.fat = false; // 변경
+console.log(player);
 
-console.log(daysOfWeek);
+player.lastName = "potato"; // 추가
+console.log(player);
 
-daysOfWeek.push("sun");
-
-console.log(daysOfWeek);
-
-const toBuy = ["potato", "tomato", "pizza"];
-console.log(toBuy[2]);
+player.points += 15;
+console.log(player.points);
