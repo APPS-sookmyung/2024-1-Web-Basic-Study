@@ -15,13 +15,13 @@ function divide(a, b) {
 plus(8, 60);
 divide(98, 20);
 
-const plyaer = {
+const player = {
   name: "nico",
   sayHello: function (otherPersonName){ //함수가 데이터를 받음
     console.log("hello " + otherPersonName + " nice to meet you!");
   },
 };
 
-console.log(palyer.name);
+console.log(player.name);
 player.sayHello("lynn") //함수에 데이터를 보냄
 player.sayHello("nico")
