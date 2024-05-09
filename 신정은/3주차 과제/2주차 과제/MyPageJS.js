@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function(){
             alert(`값이 올바르지 않습니다.`);
             return;
         }
-        
         const monster1stat = pokemonstat[stat1];
         const monster2stat = pokemonstat[stat2];
         if (monster1stat > monster2stat){
