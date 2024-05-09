@@ -13,18 +13,15 @@ pokemonlev.forEach ((pokemon, index) => {
 
 });
 
-function comparebox() {
-    a = prompt("moster1을 선택해주세요.(숫자 입력)");
-    b = prompt("moster2을 선택해주세요.(숫자 입력)");
+comparebox.addEventListener("click", function() {
+    const a = parseInt(prompt("moster1을 선택해주세요.(숫자 입력)"));
+    const b = parseInt(prompt("moster2을 선택해주세요.(숫자 입력)"));
 
-    parseInt(a);
-    parseInt(b);
-
-    if (pokelevel[a-1] > pokelevel[b-1]) {
+    if ( pokelevel[a-1] > pokelevel[b-1]) {
         alert(a + "가 이깁니다.");
     } else if (pokelevel[a-1] < pokelevel[b-1]) {
         alert(b + "가 이깁니다.");
     } else {
         alert("값이 올바르지 않습니다.")
     }
-}
+});
