@@ -19,11 +19,11 @@ parseInt() 문자열을 숫자로 변환
 isNaN() NaN인지 판별하는 방법 boolean 값 반환
 조건문(if) 형태
 if(condition){
-  // condtion == true
+  // condition == true
 } else {
-  // condtion == false
+  // condition == false
 }
-condion은 참거짓 판별이 가능해야함
+condition은 참거짓 판별이 가능해야함
 참이면 if문 안의 코드 실행 거짓이면 else문 안의 코드 실행
 
 # 2.15
@@ -31,3 +31,13 @@ condion은 참거짓 판별이 가능해야함
 && AND 둘 다 true여야 함
 || OR 둘 중에 하나만 true면 됨
 
+# 2.16
+전 내용 복습
+=== 같다
+!== 아니다
+조건문의 순서 중요
+condition에서 먼저 수행할 부분 ()괄호묶기
+
+# 3.0
+HTML과 상호작용: HTML의 요소들을 JavaScript를 통해 변경하고 읽을 수 있음
+document 접근할 수 있는 HTML을 가리키는 객체 -> JavaScript의 object처럼 properties를 가져올 수 있음
