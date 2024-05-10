@@ -1,20 +1,10 @@
-//코드 숙제
-const calculator = {
-  add: function(a, b){
-    console.log(a + b);
-  },
-  minus: function(a, b){
-    console.log(a - b);
-  },
-  div: function(a, b){
-    console.log(a / b);
-  },
-  powerof: function(a, b){
-    console.log(a**b);
-  }
-}
+// const age = prompt("How old are you?"); //<- 여기서 입력을 기다림
 
-calculator.add(1, 2);
-calculator.minus(1, 2);
-calculator.div(1, 2);
-calculator.powerof(1, 2);
+// //type를 바꾸기
+// // parseInt()
+// // console.log(typeof "15", typeof parseInt("15")); //전자는 string 후자는 number
+
+// console.log(age, parseInt(age));
+//입력값이 숫자가 아니라면 NaN(Not a Number)
+
+const age = parseInt(prompt("How old are you?"));
