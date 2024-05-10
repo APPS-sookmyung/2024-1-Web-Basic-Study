@@ -25,3 +25,9 @@ if(condition){
 }
 condion은 참거짓 판별이 가능해야함
 참이면 if문 안의 코드 실행 거짓이면 else문 안의 코드 실행
+
+# 2.15
+조건문이 여러개 필요할 때 -> else if
+&& AND 둘 다 true여야 함
+|| OR 둘 중에 하나만 true면 됨
+
