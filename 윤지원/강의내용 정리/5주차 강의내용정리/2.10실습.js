@@ -3,11 +3,11 @@ const player = {
   age: 98,
 };
 
-//console.log(player);
+console.log(player);
 player.name = "heenie";
-//console.log(player);
+console.log(player);
 player.sexy = "soon";
-//console.log(player, console);
+console.log(player, console);
 
 //계산기 실습
 const calculator = {
