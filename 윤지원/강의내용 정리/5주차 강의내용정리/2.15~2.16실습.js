@@ -1,5 +1,5 @@
-//const age = parseInt("-50");
-//const age = "aaaaaaaaa";
+const age = parseInt("-50");
+const age = "aaaaaaaaa";
 const age = 100;
 if (isNaN(age) || age < 0) {
   console.log("please write a positive number");
