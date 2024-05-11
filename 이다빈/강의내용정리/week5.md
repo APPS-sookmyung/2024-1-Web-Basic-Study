@@ -41,3 +41,13 @@ condition에서 먼저 수행할 부분 ()괄호묶기
 # 3.0
 HTML과 상호작용: HTML의 요소들을 JavaScript를 통해 변경하고 읽을 수 있음
 document 접근할 수 있는 HTML을 가리키는 객체 -> JavaScript의 object처럼 properties를 가져올 수 있음
+document.title
+"Momentum App"
+document.title = "Hi" //제목 변경
+"Hi"
+
+# 3.1
+JavaScript로 정보를 가져오는 방법
+  document 객체
+  element를 가져오는 함수들
+    id를 가져옴 .getElementById()
