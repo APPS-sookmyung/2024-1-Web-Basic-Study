@@ -3,7 +3,6 @@ let isNicoFat = true;
 isNicoFat = false;
 
 const days = ["none", undefined];
-
 const toBuy = ["a", "b", "cat"];
 console.log(toBuy[2]);
 toBuy[2] = "water";
