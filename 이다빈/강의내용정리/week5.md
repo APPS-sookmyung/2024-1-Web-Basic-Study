@@ -51,3 +51,12 @@ JavaScript로 정보를 가져오는 방법
   document 객체
   element를 가져오는 함수들
     id를 가져옴 .getElementById()
+
+# 3.2
+에러
+Uncaught TypeError: Cannot set properties of null (setting 'innerText')
+innerText의 프로퍼티를 바꿀수 없음
+아무것도 없는 것(null)의 innerText에 접근하려 했기 때문
+class를 가져옴 .getElementsByClassName() //class를 지닌 요소를 array로 가져옴
+tag를 가져옴 .getElementsByTagName() //array로 가져옴
+.querySelector element를 CSS 방식으로 검색할 수 있음
