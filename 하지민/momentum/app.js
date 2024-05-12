@@ -1,15 +1,37 @@
-const a = 5;
-let ifNicoFat = true;
+// //object
+// const player = {
+//   name: "Nico",
+//   age: 98,
+// };
+// player.name = "nicolas";
+// console.log(player);
+// player.sexy = "soon";
+// console.log(player, console);
 
-const b = null;
-let hello;
-console.log(hello);
+// //function
+// function plus(potatato, salad) {
+//   console.log(potato + salad);
+// }
 
-const days = [1, 2, false, true, null, undefined, "text", me];
+// plus(5, 10);
+// plus(1.3435, 9898);
 
-const toBuy = ["potato", "tomato", "pizza"];
-console.log(toBuy);
-toBuy[2] = "water";
-console.log(toBuy);
-toBuy.push("meat");
-console.log(toBuy);
+const calculator = {
+  add: function (a, b) {
+    console.log(a + b);
+  },
+  minus: function (a, b) {
+    console.log(a - b);
+  },
+  multiple: function (a, b) {
+    console.log(a * b);
+  },
+  divide: function (a, b) {
+    console.log(a / b);
+  },
+};
+
+calculator.add(1, 1);
+calculator.minus(5, 1);
+calculator.multiple(2, 3);
+calculator.divide(4, 2);
