@@ -1,29 +1,41 @@
-function sayHello(nameOfPerson, age) {
-    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
-}
-
-sayHello("nico", 10); // "Hello my name is nico and I'm 10
-sayHello("dal", 23); // "Hello my name is dal and I'm 23
-sayHello("lynn", 21); // "Hello my name is lynn and I'm 21
-
-function plus(firstNum, secondNum) {
-    console.log(firstNum + secondNum);
-}
-
-function divide(a, b) {
-    console.log(a / b);
-}
-
-console.log(firstNum);
-plus(8, 60); // 68
-divide(98, 20); // 4.9
-
 const player = {
     name: "nico",
-    sayHello: function (otherPersonsName) {
-        console.log("hello " +  otherPersonsName + " nice to meet you!");
+    age: 98,
+};
+
+console.log(player);
+player.name = "nicolas";
+console.log(player);
+player.sexy = "soon";
+console.log(player, console);
+
+function plus(a, b) {
+    console.log(a + b);
+}
+
+plus(5, 10);
+plus(1.33453, 9898);
+plus(9898, 1.33453);
+
+const calculator = {
+    add: function(a, b) {
+        console.log(a + b);
+    },
+
+    minus: function(a, b) {
+        console.log(a - b);
+    },
+
+    divide: function(a, b) {
+        console.log(a / b);
+    }, 
+
+    powerof: function(a, b) {
+        console.log(a ** b)
     }
 }
 
-console.log(player.name); // nico
-player.sayHello("lynn"); // hello lynn nice to meet you!
+calculator.add(30, 5);
+calculator.minus(30, 5);
+calculator.divide(30, 5);
+calculator.powerof(2, 5);
