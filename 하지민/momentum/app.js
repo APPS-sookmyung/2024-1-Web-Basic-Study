@@ -1,15 +1,15 @@
-const age = 96;
-function calculateKrAge(ageOfForeigner) {
-  return ageOfForeigner + 2;
-}
+// const age = 96;
+// function calculateKrAge(ageOfForeigner) {
+//   return ageOfForeigner + 2;
+// }
 
-const krAge = calculateKrAge(age);
+// const krAge = calculateKrAge(age);
 
-console.log(krAge);
+// console.log(krAge);
 
 const calculator = {
   plus: function (a, b) {
-    return a + b;
+    return a + b; //return 작성하면 function 끝남
   },
   minus: function (a, b) {
     console.log(a - b);
