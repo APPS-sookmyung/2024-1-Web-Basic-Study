@@ -46,3 +46,11 @@ function sayHello(nameOfPerson,age) {
 sayHello("유진", 10);
 sayHello("nico", 21);
 > [데이터를 주고 받는 방법] nameOfPerson,age 변수를 통해 해결 가능 
+
+# 2.11 
+console > alert로 바꿔주면 경고창으로 계속 출력! (신기)
+console > return으로 바꿔주면 콘솔창에는 아무 변화 없음 
+
+const plusResult = calculator.plus(2,3);
+const minusResult = calculator.minus(plusResult, 10); 
+>> 서로 의존적인 코드!
