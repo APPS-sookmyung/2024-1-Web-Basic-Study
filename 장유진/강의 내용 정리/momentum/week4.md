@@ -88,3 +88,20 @@ true && true === true
 false && true === false
 true && false === false
 false && false === false
+
+# 2.16
+else if (age > 80) {
+    멋져요
+} else if (age === 100) {
+    대단해요
+}
+이런 순서면 age=100일 때 '대단해요'가 출력이 안되고, '멋져요'에서 끝나버림
+>> 이렇게 순서 수정해주기 
+else if (age === 100) {
+    대단해요
+} else if (age > 80) {
+    멋져요
+}
+
+= : value 할당
+=== : 진짜 같은지, 맞는지 판정
