@@ -1,10 +1,7 @@
+const toBuy = ["potato", "tomato", "pizza"]
 
-const player = {
-    name : "nico",
-    sayHello : function(otherPersonsName){
-        console.log("hello!" + otherPersonsName + "nice to meet you")
-    },
-};
-
-player.sayHello("nico");
-player.sayHello("lynn");
+console.log(toBuy);
+toBuy[2] = "water"
+console.log(toBuy);
+toBuy.push("one");
+console.log(toBuy);
