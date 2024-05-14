@@ -108,3 +108,8 @@ else if (age === 100) {
 
 # 3.0 본격적인 html과 js 연결 시작!
 document.title="집가고싶다" // js로 html 타이틀 변경 
+
+# 3.1 
+querySelector : element를 CSS 방식으로 검색 
+예 .hello h1 
+hello class 속 h1을 가지고 와라 
