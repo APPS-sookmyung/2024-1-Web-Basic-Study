@@ -1,7 +1,3 @@
-document.title = "Hello! From JS!";
+const title = document.querySelector(".hello h1");
 
-const title = document.getElementById("title");
-
-title.innerText = "Got you!";
-
-console.log(title.className);
+console.log(title);
