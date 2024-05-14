@@ -1,7 +1,24 @@
-const toBuy = ["potato", "tomato", "pizza"];
+const calculator = {
+    plus: function (a,b) {
+        console.log(a+b);
+    },
+    minus: function (a,b) {
+        console.log(a-b);
+    },
+    divide: function (a,b) {
+        console.log(a/b);
+    },
+    multiple: function (a,b) {
+        console.log(a*b);
+    },
+    powerof: function (a,b) {
+        console.log(a**b);
+    },
+    
+};
 
-console.log(toBuy);
-toBuy[2] = "water";
-console.log(toBuy);
-toBuy.push("meat");
-console.log(toBuy);
+calculator.plus(5,1);
+calculator.minus(5,1);
+calculator.divide(5,1);
+calculator.multiple(5,1);
+calculator.powerof(5,1);
