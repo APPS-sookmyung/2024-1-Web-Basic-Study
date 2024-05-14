@@ -1,8 +1,8 @@
-const calculator = {
-  add: function (a, b) {
-    console.log(a + b);
-  },
-  minus: function (a, b) {
-    console.log(a - b);
-  },
-};
+const age = 22;
+function calculateKrAge(ageOfForeigner) {
+  return ageOfForeigner + 2;
+}
+
+const KrAge = calculateKrAge(age);
+
+console.log(KrAge);
