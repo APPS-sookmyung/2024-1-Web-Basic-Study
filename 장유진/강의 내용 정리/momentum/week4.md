@@ -73,3 +73,18 @@ isNaN : boolean을 반환
 
 if(condition) { // condition에 boolean
 }
+
+# 2.15 
+두가지 조건
+AND : &&
+OR : ||
+
+true || true === true
+false || true === true
+true || false === true
+false || false === false
+
+true && true === true
+false && true === false
+true && false === false
+false && false === false
