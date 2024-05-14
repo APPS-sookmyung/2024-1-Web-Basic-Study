@@ -54,3 +54,22 @@ console > return으로 바꿔주면 콘솔창에는 아무 변화 없음
 const plusResult = calculator.plus(2,3);
 const minusResult = calculator.minus(plusResult, 10); 
 >> 서로 의존적인 코드!
+
+# 2.12
+근데 왜 굳이 console 대신에 return을 사용해야하나?
+- console은 콘솔에 결과를 보여주기 위한 것
+- alert는 브라우저에 결과를 보여주기 위한 것  
+- return은 콘솔이 아닌 화면에 출력!
+
+# 2.13
+prompt는 아주 오래된 방법 > css로 수정, 꾸미기 불가 
+자신이 만든 html, css로 입력값 받기 
+[type 변경]
+parseInt() : string > number
+
+# 2.14
+isNaN : boolean을 반환
+예 15 > False : NaN이 아니라는 뜻, 즉 age가 num이다. 
+
+if(condition) { // condition에 boolean
+}
