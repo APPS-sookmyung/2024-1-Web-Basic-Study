@@ -105,3 +105,6 @@ else if (age === 100) {
 
 = : value 할당
 === : 진짜 같은지, 맞는지 판정
+
+# 3.0 본격적인 html과 js 연결 시작!
+document.title="집가고싶다" // js로 html 타이틀 변경 
