@@ -1,7 +1,8 @@
-const toBuy = ["potato", "tomato", "pizza"];
-
-console.log(toBuy);
-toBuy[2] = "water";
-console.log(toBuy);
-toBuy.push("meat");
-console.log(toBuy);
+const calculator = {
+  add: function (a, b) {
+    console.log(a + b);
+  },
+  minus: function (a, b) {
+    console.log(a - b);
+  },
+};
