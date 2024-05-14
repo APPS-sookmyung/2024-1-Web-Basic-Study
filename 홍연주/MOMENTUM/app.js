@@ -17,7 +17,3 @@ const calculator = {
 };
 
 const plusResult = calculator.plus(2,4);
-const minusResult = calculator.minus(plusResult, 10);
-const timesResult = calculator.times(10, minusResult);
-const divideResult = calculator.divide(timesResult, plusResult);
-const powerResult = calculator.power(divideResult, minusResult);
