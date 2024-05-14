@@ -1,11 +1,7 @@
-function plus(firstNumber, secondNumber) {
-  console.log(firstNumber + secondNumber);
-}
-function divide(a, b) {
-  console.log(a / b);
-}
-plus(8, 60);
-divide(98, 20);
+const toBuy = ["potato", "tomato", "pizza"];
 
-console.log();
-player.sayhello();
+console.log(toBuy);
+toBuy[2] = "water";
+console.log(toBuy);
+toBuy.push("meat");
+console.log(toBuy);
