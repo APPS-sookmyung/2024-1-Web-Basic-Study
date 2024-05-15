@@ -1,9 +1,3 @@
-const player = {
-    name: "yeonju",
-    sayHello: function(otherPersonsName) {
-        console.log("hello! " + otherPersonsName + " nice to meet U!");
-    },
-};
+const title = document.querySelector(".hello h1");
 
-console.log(player.name);
-player.sayHello("lynn");
+title.innerText = "Hello";
