@@ -5,6 +5,7 @@ title.style.color = "blue";
 function handleTitleClick() {
   console.log("클릭하면 발동 ");
 }
+
 title.addEventListener("click", handleTitleClick);
 //유저가 클릭하면 함수가 실행되는 코드
 function handleTitleClick() {
