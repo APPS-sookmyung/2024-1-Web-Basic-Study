@@ -61,3 +61,11 @@ alert는 모든 동작을 막음
 css로 버튼 숨기기
 문자와 변수를 합치는 방법
 `문자 ${변수명}` 백틱 기호로 시작
+
+# 4.5
+value를 저장하는 법 localStorage 브라우저에 무언가를 저장하게 해줌
+localStorage.setItem("username", "dabin")
+localStorage.getItem("username")
+>'dabin'
+localStorage.removeItem("username")
+사용자이름을 기억하나 새로고침하면 form이 남아있음
