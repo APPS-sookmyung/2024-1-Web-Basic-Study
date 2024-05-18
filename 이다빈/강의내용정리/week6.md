@@ -30,3 +30,13 @@ transition을 추가해 변화 속도 설정하기
 개발자가 설정한 raw string(raw value)을 직접 사용하면 오타등의 오류 발생
 ->변수에 저장
 모든 class name을 변경하지 않게 해야함.
+
+# 3.8
+.contain 명시한 class가 HTML element의 class에 포함되어 있는지 말해줌
+.toggle 클래스가 존재하는지 확인하고, 존재한다면 클래스를 삭제함.
+
+# 4.0
+사용자 정보 받기, 화면에 표시하기
+HTML 먼저
+수많은 input과 button을 구별하기 위해 이름 설정하기
+사용자 이름을 입력받음을 확인하는 과정 필요.
