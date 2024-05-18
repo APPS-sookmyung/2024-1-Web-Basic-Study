@@ -69,3 +69,7 @@ localStorage.getItem("username")
 >'dabin'
 localStorage.removeItem("username")
 사용자이름을 기억하나 새로고침하면 form이 남아있음
+
+# 4.6
+유저정보 유무 확인 -> 있으면 form 삭제
+반복되는 문자는 대문자 변수로 저장하기. 오타가 나면 오류가 뜸.
