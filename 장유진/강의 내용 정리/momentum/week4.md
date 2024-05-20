@@ -113,3 +113,7 @@ document.title="집가고싶다" // js로 html 타이틀 변경
 querySelector : element를 CSS 방식으로 검색 
 예 .hello h1 
 hello class 속 h1을 가지고 와라 
+
+# 3.3 events
+title.addEventListener("click") : title 클릭 이벤트 발생 시 
+event를 listen -> js 에게 무슨 event를 listen하고 싶은지를 알려줘야 함
