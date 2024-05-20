@@ -8,6 +8,7 @@ function onLoginSubmit(event) {
     event.preventDefault(); // 새로고침 막아줌
     loginForm.classList.add(HIDDEN_CLASSNAME)
     const username = loginInput.value;
+    localStorage.setItem("username", username);
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
