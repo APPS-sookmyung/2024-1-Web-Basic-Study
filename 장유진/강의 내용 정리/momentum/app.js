@@ -5,12 +5,14 @@ const link = document.querySelector("a");
 
 function onLoginSubmit(event) {
     event.preventDefault();
-    console.log(loginInput.value);
+    loninForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    "Hello" + username
+    'Hello ${username}'
+    greeting.innerText = 'Hello ${username}';
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-function handleLinkClick(event) {
-    event.preventDefault();
-}
 
 loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkClick);
