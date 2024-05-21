@@ -1,13 +1,8 @@
-const title = document.querySelector("div.hello:first-child h1");
+const loginForm = document.getElementById("#login");
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button");
+
 function click() {
-  title.classList.toggle("active");
-
-  // const activeClass = "active";
-  // if (title.classList.contains(activeClass)) {
-  // title.classList.remove(activeClass);
-  // } else {
-  // title.classList.add(activeClass);
-  // }
+  console.log(loginInput.value);
 }
-
-title.onclick = click;
+loginButton.addEventListener("click", click);
