@@ -1,11 +1,10 @@
 const title = document.querySelector("div.hello:first-child h1");
 function click() {
-  console.log("title was clicked!");
-}
-function copy() {
-  alert("copier!");
+  if (title.style.color === "blue") {
+    title.style.color = "tomato";
+  } else {
+    title.style.color = "blue";
+  }
 }
 
 title.onclick = click;
-
-window.addEventListener("copy", copy);
