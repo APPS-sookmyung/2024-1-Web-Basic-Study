@@ -6,6 +6,7 @@ function login(event) {
   event.preventDefault();
   const username = loginInput.value;
   loginForm.classList.add("hidden");
+  localStorage.setItem("username", username);
   greeting.innerHTML = "hello!";
   greeting.classList.remove("hidden");
 }
