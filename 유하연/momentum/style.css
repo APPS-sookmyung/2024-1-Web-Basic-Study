@@ -3,9 +3,13 @@ body{
 }
 h1{
     color : cornflowerblue;
-    transition : color .5s ease-in-out;
+    transition : color 0.5s;
 }
 
 .clicked{
     color : tomato;
+}
+
+.sexy-font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
