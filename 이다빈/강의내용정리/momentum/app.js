@@ -1,12 +1,33 @@
-// const title = document.getElementsByTagName("h1"); //배열로 가져옴
-const title = document.querySelector(".hello h1");
-const titles = document.querySelectorAll(".hello h1");
+const loginForm = document.querySelector("#login-form")
+const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-// const title = document.querySelector("#hello");
-// const title = document.getElementById("hello");
-// 두 개가 같음
+const HIDDEN_CLASSSNAME = "hidden";
+const USERNAME_KEY = "username";
 
-title.innerText = "Hello";
+function onLoginSubmit(event) {
+  event.preventDefault();
+  loginForm.classList.add(HIDDEN_CLASSSNAME);
+  const username = loginInput.value;
+  localStorage.setItem(USERNAME_KEY, username);
+  // greeting.innerText = `Hello ${username}`;
+  // greeting.classList.remove(HIDDEN_CLASSSNAME);
+  painGreetings(username);
+}
 
-console.log(title);
-console.log(titles);
+function painGreetings(username) {
+  greeting.innerText = `Hello ${username}`;
+  greeting.classList.remove(HIDDEN_CLASSSNAME);
+}
+
+
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+if(savedUsername === null) {
+  loginForm.classList.remove(HIDDEN_CLASSSNAME);
+  loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+  // greeting.innerText = `Hello ${savedUsername}`;
+  // greeting.classList.remove(HIDDEN_CLASSSNAME);
+  painGreetings(savedUsername);
+}
