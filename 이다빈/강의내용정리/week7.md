@@ -81,4 +81,4 @@ todos에게 id를 저장하는 옵션주기
 filter 조건 외의 것들 제외하고 새 array를 줌
 
 # 7.8
-타입이 달라 작동되지 않음 ->parseInt() 이용
+타입이 달라 작동되지 않음 -> parseInt() 이용
