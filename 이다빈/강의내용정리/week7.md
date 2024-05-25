@@ -71,3 +71,7 @@ JSON.parse() localStorage에 저장된 string을 array로 불러옴.
 # 7.5
 이전 것과 새로운 것 모두 유지하기
 toDos가 빈 array로 업데이트 되기 때문. toDos를 let으로 선언
+
+# 7.6
+삭제 시 localStorage 업데이트하기
+todos에게 ID주기
