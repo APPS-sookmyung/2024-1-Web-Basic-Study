@@ -20,3 +20,21 @@ date.getSeconds()
 
 # 5.2
 한 자릿수로 나오는 문제 1 -> 01
+최소한 두 개의 문자를 가져야함
+.padStart(문자 길이, 아닐 시 앞에 추가할 문자)
+.padEnd(문자 길이, 아닐 시 뒤에 추가할 문자)
+
+# 5.2
+복습
+명언 10개 알아오기
+
+# 6.0
+랜덤으로 명언 띄우기
+randomness
+Math 모듈
+.random()
+.round() 반올림
+.ceil() 올림
+.floor() 내림
+0~9까지 랜덤 숫자
+Math.floor(Math.random() * 10)
