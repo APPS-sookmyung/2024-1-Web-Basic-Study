@@ -42,5 +42,5 @@ const saveToDos = localStorage.getItem(TODOS_KEY);
 
 if(savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);
-    parsedToDos.forEach((item) => console.log("this is the turn of", item));
+    parsedToDos.forEach(paintToDo);
 }
