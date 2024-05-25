@@ -74,4 +74,11 @@ toDos가 빈 array로 업데이트 되기 때문. toDos를 let으로 선언
 
 # 7.6
 삭제 시 localStorage 업데이트하기
-todos에게 ID주기
+todos에게 id를 저장하는 옵션주기
+
+# 7.7
+지우고 싶은 item을 제외하고 새 array 만들기
+filter 조건 외의 것들 제외하고 새 array를 줌
+
+# 7.8
+타입이 달라 작동되지 않음 ->parseInt() 이용
