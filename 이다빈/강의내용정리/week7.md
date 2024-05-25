@@ -49,3 +49,6 @@ document.body.appendChild()
 
 # 7.0
 투두리스트 만들기(인사하기와 비슷함.)
+
+# 7.1
+ul 안에 li와 span 추가하기(배경 추가하기 응용)
