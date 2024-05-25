@@ -24,7 +24,7 @@ date.getSeconds()
 .padStart(문자 길이, 아닐 시 앞에 추가할 문자)
 .padEnd(문자 길이, 아닐 시 뒤에 추가할 문자)
 
-# 5.2
+# 5.3
 복습
 명언 10개 알아오기
 
@@ -38,3 +38,8 @@ Math 모듈
 .floor() 내림
 0~9까지 랜덤 숫자
 Math.floor(Math.random() * 10)
+
+# 6.1
+랜덤 배경화면
+.createElement() html에 추가하기
+document.body.appendChild()
