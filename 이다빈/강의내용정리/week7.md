@@ -43,3 +43,9 @@ Math.floor(Math.random() * 10)
 랜덤 배경화면
 .createElement() html에 추가하기
 document.body.appendChild()
+
+# 6.2
+복습
+
+# 7.0
+투두리스트 만들기(인사하기와 비슷함.)
