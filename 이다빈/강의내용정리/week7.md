@@ -61,4 +61,13 @@ ul 안에 li와 span 추가하기(배경 추가하기 응용)
 투두를 저장한 뒤 불러오기
 localStorage에는 텍스트만 저장할 수 있음.
 화면에 불러오기와 중복인 경우 처리.
-JSON.stringify() string으로 만들어 배열로 저장하게 해줌.
+JSON.stringify() string으로 바꿔 배열로 저장하게 해줌.
+
+# 7.4
+JSON.parse() localStorage에 저장된 string을 array로 불러옴.
+.forEach() 배열의 각 item에 접근하게 함.
+.forEach((item) => 실행코드) <- 화살표함수
+
+# 7.5
+이전 것과 새로운 것 모두 유지하기
+toDos가 빈 array로 업데이트 되기 때문. toDos를 let으로 선언
