@@ -7,13 +7,13 @@ const TODOS_KEY = "todos";
 let toDos = [];
 
 function saveToDos() {
-    localStorage.setItem("todos", JSON.stringify(todos));
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
 function deleteToDo(event) {
     const li = event.target.parentElement;
-    console.log(li.id);
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
 }
 
 function paintToDo(newTodo) {
