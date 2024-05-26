@@ -49,3 +49,14 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+function sexyFilter(){
+
+}
+
+[1,2,3,4].filter(sexyFilter)
+
+sexyFilter(1)=1
+sexyFilter(2)=2
+sexyFilter(3)=3
+sexyFilter(4)=4
