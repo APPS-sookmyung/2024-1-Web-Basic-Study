@@ -13,6 +13,8 @@ function saveToDos() {
 function deleteToDo(event) {
     const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 function paintToDo(newTodo) {
@@ -51,8 +53,3 @@ if (savedToDos !== null) {
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
-
-// const arr = [1234, 5454, 223, 122, 45, 6775, 334]
-// function sexyFilter(potato) { return potato <= 1000}
-// arr.filter(sexyFilter)
-// --> [223, 122, 45, 334]
