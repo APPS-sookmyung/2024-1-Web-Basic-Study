@@ -1,0 +1,74 @@
+#5.0
+interval: '매번' 일어나야 하는 무언가 (ex. 매 2초, 매 2초마다 이벤트를 일어나게 하고 싶을 때 사용)
+setInterval: 
+- 두 개의 argument를 받음
+- 첫 번째 argument는 내가 실행하고자 하는 function, 두 번째 argument는 호출되는 function 간격을 몇 milliseconds로 할 지 작성 
+- ex) setInterval(sayHello, 5000);  5초마다 sayHello가 계속해서 실행됨
+
+#5.1
+setTimeout: 
+- setInterval처럼 계속해서 실행되지 않음, 몇 초 뒤에 실행되는지만 결정
+- setTimeout(sayHello, 5000);
+//getClock();
+//setInterval(getClock, 1000); -> website가 load 되자마자 getClock()을 실행하고 매초마다 실행됨
+
+#5.2
+"1".padStart(2,"0");  "1"이라는 string의 길이를 2로 바꿔야 됨, 만약 2가 되지 않는다면 앞쪽에 "0" 추가함
+padEnd: padStart와 같지만 뒤쪽에 "0" 추가
+String(number);  number를 string으로 바꿔줌
+
+#5.3 복습
+Date object는 호출하는 당시의 날짜, 시간을 알려줌 (ex. const date = new Date();로 선언)
+
+#6.0
+Math.random();  0부터 1 사이의 랜덤한 숫자 제공
+Math.random() * 10;  0에서 10 사이의 랜덤한 숫자
+Math.round(1.4); -> 1 / Math.round(1.5); -> 2    round는 반올림
+Math.ceil(1.01); -> 2   ceil은 올림
+Math.floor(1.9); -> 1   floor은 내림
+Math.floor(Math.random() * 10);  0~9까지 랜덤한 숫자
+Array.length;  Array의 길이 반환
+
+#6.1
+document.createElement("element");  element 생성
+//const bgImage = document.createElement("img");
+//bgImage.src = `img/${chosenImage}`; 
+//document.body.appendChild(bgImage);  body에 html을 추가  
+-> html에서 <img src="img/0.png"/> 작성하는 것과 같음
+
+#6.2
+item이 5개 있는 Array에서 마지막 item을 가져오려면 필요한 숫자는 4
+appendChild() 대신 prepend()도 사용 가능
+append는 가장 뒤에, prepend는 가장 위에 오게 하는 것
+
+#7.1
+todo-form에 아무것도 입력하지 않으면 추가하지 않음 -> html에서 field를 보호하고 있음(input에 required를 넣었기 때문)
+
+#7.2
+append는 맨 뒤에 놓여져야 함
+target은 클릭된 html element
+parentElement는 클릭된 element의 부모
+
+#7.3
+JSON.stringify(value);  js object나 array나 js 코드건 간에 value를 string으로 만들어서 저장해줌
+
+#7.4
+JSON.parse("[1,2,3,4]");  단순한 string을 js가 이해할 수 있는 array로 만들어줌
+forEach는 function을 실행하게 해주는데 그 array에 있는 각각의 item에 대해서 실행해줌
+
+//function sayHello(item) {
+//    console.log("this is the turn of", item);
+//}
+===
+//(item) => console.log("this is the turn of", item);   arrow function(화살표 함수)
+
+#7.5 새로고침했을 때 todo가 사라지는 것을 막기 위한 방법
+
+#7.6 array에서 item을 지우는 법
+
+#7.7
+만약 array에서 뭔가를 삭제할 때 실제로 삭제하는 것이 아님, 지우고 싶은 item을 빼고 새 array를 만듦
+//function sexyFilter(item) {return item !== 3}
+//[1,2,3,4,5].filter(sexyFilter)  -> [1,2,4,5]
+
+#7.8 todo 삭제하기
