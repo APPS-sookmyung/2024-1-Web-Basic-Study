@@ -9,5 +9,5 @@ function getClock() {
 }
 
 getClock();
-setTimeout(sayHello, 5000);
+setInterval(getClock, 5000);
 
