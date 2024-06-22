@@ -10,7 +10,6 @@ js파일을 통해 html의 내용을 가져올 수 있다. html이 js파일을 �
 - function이 js에게 넘겨주고 유저가 title을 click할 경우에 js가 실행버튼을 대신 눌러주길 바라는 것
 
   3.3~3.5 Event 이어서
-
   listen하고 싶은 event를 찾는 가장 좋은 방법 3가지:
 
 1. 구글에 찾고 싶은 element의 이름 검색하기: h1 html element mdn(mozilla developer network)
