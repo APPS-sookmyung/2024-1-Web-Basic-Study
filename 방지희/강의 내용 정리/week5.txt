@@ -1,0 +1,53 @@
+#2.9 *데이터 타입 복습_2
+variable[2] = "a";  variable의 2번째 항목을 a로 업데이트 함
+
+#2.10 *데이터 타입 복습_2
+console.log도 object
+
+#2.11
+function 안에서 무언가를 return하면 function을 실행할 때 function을 대체함
+(무언가를 return하면 계산을 담당하는 function의 코드는 그 function이 return하는 값과 같아짐)
+
+#2.12
+return을 쓰는 이유: function 외부에서 value를 제공받기 위해
+function 안에서 return하는 순간, function이 종료됨
+
+#2.13
+prompt는 사용자에게 창을 띄울 수 있게 함
+prompt는 2개(message, default)의 argument를 받음
+prompt는 CSS를 적용시킬 수 없음!
+변수의 타입을 확인하는 방법 -> typeof(variable) or typeof variable
+parseInt() -> string을 number로 변환
+parseInt(variable)에서 variable이 숫자가 아니면 console.log했을 때 NaN(not a number)이 나옴
+
+#2.14 *if
+isNaN()은 boolean을 반환함
+true 반환 -> 숫자가 아님, false 반환 -> 숫자임
+if (condition) {} else {} 에서 condition이 true면 if의 {} 실행, false면 else의 {} 실행
+
+#2.15 *else if
+if (condition) {} else if (condition) ... else {} 에서 if, else if의 모든 condition이 false일 때 else의 {}이 실행
+and: &&
+or: ||
+true || false == true
+true || true == true
+false || false == false
+
+#2.16
+equal: ===
+not equal: !==
+
+#3.0
+document는 브라우저에 이미 존재하는 object임 (우리가 접근할 수 있는 HTML을 가리키는 객체)
+JavaScript는 HTML에 접근하고 읽을 수 있게 설정됨
+
+#3.1
+document.getElementById("variable") -> id="variable"을 가진 element를 가져옴
+ㄴ ()안은 string이어야 함
+
+#3.2
+getElementByClassName(): 많은 element를 한 번에 가져옴
+getElementsByTagName(): tag name으로 element를 가져옴 (tag == anchor, div, section, button...)
+querySelector(): element를 CSS 방식으로 검색할 수 있음 / 같은 이름의 여러 class가 있으면 첫 번째 element만 가져옴
+querySelectorAll(): selector 안의 조건에 부합하는 모든 element를 가져옴
+querySelector("#hello") == getElementById("hello")

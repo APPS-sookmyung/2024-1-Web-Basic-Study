@@ -1,0 +1,22 @@
+interval = 매번 일어나야 하는 무언가
+setInterval(실행하고자 하는 function, 호출되는 function 간격)
+setTimeout(실행하고자 하는 function, function 호출 기다리는 시간)
+
+date.getDate(): 날짜
+date.getDay(): 요일
+date.getFullYear(): 연도
+date.getHours(): 시
+date.getMinutes():분
+date.getSeconds():초
+
+padStart(): string 시작부분 padding 추가
+padEnd(): string 끝부분 padding 추가
+ex) "1".padStart(2,"0")
+>>01
+
+Math.round(숫자): 반올림
+Math.ceil(숫자): 가까운 높은 정수로
+Math.floor(숫자): 가까운 낮은 정수로
+.length: array 길이 알 수 있어
+Math.random(): 랜덤 함수
+appendChild(): html에 추가할 때 사용
